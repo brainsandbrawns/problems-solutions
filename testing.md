@@ -29,3 +29,19 @@ In test/setup.js which has to run before all your tests, require the module :
 require('react-native-mock/mock'); // <-- side-effects!!!
 
 ```
+
+2. Istanbul does not map anonymous export
+
+![ignore](images/ignore.png)
+
+Also error:
+
+```
+"SyntaxError: 'import' and 'export' may appear only with 'sourceType: module'"
+```
+
+- https://github.com/gotwarlost/istanbul/issues/598
+- https://github.com/eslint/eslint/issues/4787
+- https://github.com/gotwarlost/istanbul/issues/598
+
+Not yest solution!!!
