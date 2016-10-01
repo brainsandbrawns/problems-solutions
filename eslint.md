@@ -31,8 +31,8 @@ Reference:
 3. Error: ```no-unused-expressions``` on ```expect(Obj).to.exit``` using Chai and eslint
 
 Issue:
-![eslint-error](eslint-error-expect-chai.png)
-![eslint-err](erro-chai-expect.png)
+![eslint-error](images/eslint-error-expect-chai.png)
+![eslint-err](images/erro-chai-expect.png)
 
 **Solution**
 -  ignore eslint in test folder (for now till better solution) by :
