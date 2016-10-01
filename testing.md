@@ -44,4 +44,28 @@ Also error:
 - https://github.com/eslint/eslint/issues/4787
 - https://github.com/gotwarlost/istanbul/issues/598
 
-Not yest solution!!!
+Not yet solution!!!
+
+3. Error:
+
+![test-error](images/test-error-element.png)
+
+Typical React error!
+Meaning: You trying to test component which is undefined. The problem is with your export/import statements.
+
+**Solution**
+You need to export pure raw React component for testing purpose only.
+
+```js
+// esport raw React component then you can test it
+export class MyComponent extends ....
+
+export default MyComponent ...
+
+```
+
+in your test file:
+
+```js
+import { MyComponent } from ....
+```
