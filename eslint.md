@@ -1,6 +1,6 @@
 ### Strange errors
 
-1. ```no-named-as-default``` with React, Redux
+1.```no-named-as-default``` with React, Redux
 
 Error:
 ![eslint](images/import-error-eslint.png)
@@ -15,7 +15,7 @@ Reference:
 - https://github.com/benmosher/eslint-plugin-import/issues/544
 - https://github.com/benmosher/eslint-plugin-import/issues/468
 
-2. Missing propTypes validation of children
+2.Missing propTypes validation of children
 
 **Solution**
 
@@ -28,7 +28,7 @@ const propTypes = {
 Reference:
 -- https://github.com/yannickcr/eslint-plugin-react/issues/7
 
-3. Error: ```no-unused-expressions``` on ```expect(Obj).to.exit``` using Chai and eslint
+3.Error: ```no-unused-expressions``` on ```expect(Obj).to.exit``` using Chai and eslint
 
 Issue:
 ![eslint-error](images/eslint-error-expect-chai.png)
