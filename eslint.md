@@ -14,3 +14,29 @@ Error:
 Reference:
 - https://github.com/benmosher/eslint-plugin-import/issues/544
 - https://github.com/benmosher/eslint-plugin-import/issues/468
+
+2. Missing propTypes validation of children
+
+**Solution**
+
+```js
+const propTypes = {
+  children: PropTypes.node
+};
+```
+
+Reference:
+-- https://github.com/yannickcr/eslint-plugin-react/issues/7
+
+3. Error: ```no-unused-expressions``` on ```expect(Obj).to.exit``` using Chai and eslint
+
+Issue:
+![eslint-error](eslint-error-expect-chai.png)
+![eslint-err](erro-chai-expect.png)
+
+**Solution**
+-  ignore eslint in test folder (for now till better solution) by :
+  - create ```.eslintignore``` and add folder test to it
+
+Reference:
+- https://github.com/eslint/eslint/issues/2102
